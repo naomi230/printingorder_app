@@ -1727,3 +1727,130 @@ section {
   font-size: 13px;
   color: #fff;
 }
+
+.dapdap{
+  position:relative;
+  display:inline block;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: white;
+  border: 2px solid #cda45e;
+  margin-top:30px;
+}
+
+.dapdap-content{
+  display:none;
+  position:absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+
+}
+.dapdap:hover .dapdap-content{
+  display:content;
+}
+
+.sesbar {
+  padding: 0;
+}
+
+.sesbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.sesbar li {
+  position: relative;
+}
+
+.sesbar a,
+.sesbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.sesbar a i,
+.sesbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.sesbar a:hover,
+.sesbar .active,
+.sesbar .active:focus,
+.sesbar li:hover>a {
+  color: #d9ba85;
+}
+
+.sesbar .dapdap ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.sesbar .dapdap ul li {
+  min-width: 200px;
+}
+
+.sesbar .dapdap ul a {
+  padding: 10px 20px;
+  color: #444444;
+}
+
+.navbar .dapdap ul a i {
+  font-size: 12px;
+}
+
+.navbar .dapdap ul a:hover,
+.navbar .dapdap ul .active:hover,
+.navbar .dapdap ul li:hover>a {
+  color: #cda45e;
+}
+
+.navbar .dapdap:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.navbar .dapdap .dapdap ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+
+.navbar .dapdap .dapdap:hover>ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
